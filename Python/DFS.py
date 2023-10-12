@@ -11,7 +11,7 @@ def dfs(graph, v, visited):
     
     #방문하지 않은 노드가 있다면 재귀함수로 방문 처리 
     for i in range(v):
-        if not invited[i]:
+        if not visited[i]:
             dfs(graph, v, visited)
             
 #graph 안에 2차원 리스트로 각 노드별 인접한 노드 선언
